@@ -15,16 +15,123 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <style>
+        body {
+            font-family: 'Roboto';font-size: 16px;
+        }
 
+        .aboutus-section {
+            padding: 90px 0;
+        }
+        .aboutus-title {
+            font-size: 30px;
+            letter-spacing: 0;
+            line-height: 32px;
+            margin: 0 0 39px;
+            padding: 0 0 11px;
+            position: relative;
+            text-transform: uppercase;
+            color: #000;
+        }
+        .aboutus-title::after {
+            background: #fdb801 none repeat scroll 0 0;
+            bottom: 0;
+            content: "";
+            height: 2px;
+            left: 0;
+            position: absolute;
+            width: 54px;
+        }
+        .aboutus-text {
+            color: #606060;
+            font-size: 13px;
+            line-height: 22px;
+            margin: 0 0 35px;
+        }
+
+        a:hover, a:active {
+            color: #ffb901;
+            text-decoration: none;
+            outline: 0;
+        }
+        .aboutus-more {
+            border: 1px solid #fdb801;
+            border-radius: 25px;
+            color: #fdb801;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0;
+            padding: 7px 20px;
+            text-transform: uppercase;
+        }
+        .feature .feature-box .iconset {
+            background: #fff none repeat scroll 0 0;
+            float: left;
+            position: relative;
+            width: 18%;
+        }
+        .feature .feature-box .iconset::after {
+            background: #fdb801 none repeat scroll 0 0;
+            content: "";
+            height: 150%;
+            left: 43%;
+            position: absolute;
+            top: 100%;
+            width: 1px;
+        }
+
+        .feature .feature-box .feature-content h4 {
+            color: #0f0f0f;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 22px;
+            margin: 0 0 5px;
+        }
+
+
+        .feature .feature-box .feature-content {
+            float: left;
+            padding-left: 28px;
+            width: 78%;
+        }
+        .feature .feature-box .feature-content h4 {
+            color: #0f0f0f;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 22px;
+            margin: 0 0 5px;
+        }
+        .feature .feature-box .feature-content p {
+            color: #606060;
+            font-size: 13px;
+            line-height: 22px;
+        }
+        .icon {
+            color : #f4b841;
+            padding:0px;
+            font-size:40px;
+            border: 1px solid #fdb801;
+            border-radius: 100px;
+            color: #fdb801;
+            font-size: 28px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            width: 70px;
+        }
+        }
         body {
             margin: 25px;
             background-image: url("https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
         }
 
         img {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 500px;
         }
 
         .navbar-new-top{
@@ -105,7 +212,61 @@
 <h5>2</h5>
 <div style="width: 80%" class="container">
     <center>
-        <img src="/pic/31960172_174805739887794_679546177930133504_o.jpg" alt="">
+        <div class="aboutus-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="aboutus">
+                            <h2 class="aboutus-title">About Us</h2>
+                            <p class="aboutus-text">Được thành lập vào tháng 24/8/2019 nhưng Meow Movie đã đạt có 4 cơ sở trên toàn Hà Nội bằng sự nỗ lực của toàn bộ nhân viên cùng sự yêu thích cảu khách hàng</p>
+                            <p class="aboutus-text">Trang web được tạo ra bởi công ty thiết kế và phát triển website MTLucifer, một trong những nhà đầu tư của chuỗi cafe phim Meow Movie</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="aboutus-banner">
+                            <img src="/pic/your-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-xs-12">
+                        <div class="feature">
+                            <div class="feature-box">
+                                <div class="clearfix">
+                                    <div class="iconset">
+                                        <span class="glyphicon glyphicon-cog icon"></span>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Work with heart</h4>
+                                        <p>Với tinh thần phục vụ quý khách như những Hoàng Thượng. Moew Movie hy vọng có thể đem đến cho quý khách những giây phút đáng nhớ nhất</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="clearfix">
+                                    <div class="iconset">
+                                        <span class="glyphicon glyphicon-cog icon"></span>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Reliable services</h4>
+                                        <p>Với đội ngũ nhân viên được đào tạo bài bản, cơ sở vật chất luôn được cải thiện để luôn mang đến cho quy khách những dịch vụ tốt nhất</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="clearfix">
+                                    <div class="iconset">
+                                        <span class="glyphicon glyphicon-cog icon"></span>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Great support</h4>
+                                        <p>Chính vì vậy, sự ủng hộ của quý khách hàng chính là những gì chúng tôi mong đợi nhất, và để đạt được điều đó chúng tôi luôn cố gắng hết mình để có được sự ủng hộ của quý khách</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </center>
 </div>
 </body>

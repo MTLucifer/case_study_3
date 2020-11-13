@@ -151,8 +151,6 @@ public class MovieServlet extends HttpServlet {
     }
 
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, UnsupportedEncodingException {
-        request.setCharacterEncoding("UTF-8");
-        response.setCharacterEncoding("UTF-8");
         String phone = request.getParameter("phone");
         String name = request.getParameter("name");
         String facility = request.getParameter("facility");
@@ -160,7 +158,7 @@ public class MovieServlet extends HttpServlet {
             Customer customer = new Customer(phone, name, facility);
             this.cs.addCustomer(customer);
             RequestDispatcher dispatcher = request.getRequestDispatcher("guest/book.jsp");
-            request.setAttribute("message", "Thông tin của bạn đã được gửi đi");
+            request.setAttribute("message", "Your information has been send");
             try {
                 dispatcher.forward(request, response);
             } catch (ServletException e) {
@@ -170,7 +168,7 @@ public class MovieServlet extends HttpServlet {
             }
         }else {
             RequestDispatcher dispatcher = request.getRequestDispatcher("guest/book.jsp");
-            request.setAttribute("message", "Bạn cần nhập đủ thông tin");
+            request.setAttribute("message", "Check your information again");
             try {
                 dispatcher.forward(request, response);
             } catch (ServletException e) {

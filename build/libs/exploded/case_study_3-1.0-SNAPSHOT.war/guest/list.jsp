@@ -44,7 +44,7 @@
 
         img {
             width: 100%;
-            height: auto;
+            height: 90%;
         }
 
         div.container {
@@ -144,7 +144,7 @@
                 <img class="d-block w-100" src="/pic/banner3.jpg" alt="Third slide" style="width: 50%; height: 500px">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/pic/586f7407c39b99124dca5d336af88287.gif" alt="Third slide" style="width: 50%; height: 500px">
+                <img class="d-block w-100" src="/pic/586f7407c39b99124dca5d336af88287.gif" alt="Forth slide" style="width: 50%; height: 500px">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
